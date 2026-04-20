@@ -1,0 +1,83 @@
+--- Training RNN with BPE on cuda ---
+Epoch: 01 | Train Loss: 0.601 | Train Acc: 67.17% | Valid Loss: 0.459 | Valid Acc: 78.42%
+Epoch: 02 | Train Loss: 0.509 | Train Acc: 75.33% | Valid Loss: 0.389 | Valid Acc: 83.17%
+Epoch: 03 | Train Loss: 0.450 | Train Acc: 79.62% | Valid Loss: 0.355 | Valid Acc: 84.52%
+Final Test Acc: 84.27%
+
+--- Training GRU with BPE on cuda ---
+Epoch: 01 | Train Loss: 0.562 | Train Acc: 70.06% | Valid Loss: 0.422 | Valid Acc: 79.80%
+Epoch: 02 | Train Loss: 0.458 | Train Acc: 77.98% | Valid Loss: 0.345 | Valid Acc: 84.30%
+Epoch: 03 | Train Loss: 0.401 | Train Acc: 81.37% | Valid Loss: 0.286 | Valid Acc: 87.95%
+Final Test Acc: 88.12%
+
+--- Training LSTM with BPE on cuda ---
+Epoch: 01 | Train Loss: 0.543 | Train Acc: 71.10% | Valid Loss: 0.397 | Valid Acc: 81.67%
+Epoch: 02 | Train Loss: 0.439 | Train Acc: 79.19% | Valid Loss: 0.325 | Valid Acc: 85.22%
+Epoch: 03 | Train Loss: 0.389 | Train Acc: 82.13% | Valid Loss: 0.281 | Valid Acc: 88.12%
+Final Test Acc: 87.90%
+Repo card metadata block was not found. Setting CardData to empty.
+
+--- Training RNN with WORD on cuda ---
+Epoch: 01 | Train Loss: 0.598 | Train Acc: 67.52% | Valid Loss: 0.481 | Valid Acc: 76.99%
+Epoch: 02 | Train Loss: 0.511 | Train Acc: 75.24% | Valid Loss: 0.409 | Valid Acc: 81.76%
+Epoch: 03 | Train Loss: 0.451 | Train Acc: 79.31% | Valid Loss: 0.357 | Valid Acc: 84.92%
+Final Test Acc: 84.57%
+
+--- Training GRU with WORD on cuda ---
+Epoch: 01 | Train Loss: 0.553 | Train Acc: 70.86% | Valid Loss: 0.412 | Valid Acc: 80.73%
+Epoch: 02 | Train Loss: 0.449 | Train Acc: 78.63% | Valid Loss: 0.340 | Valid Acc: 85.01%
+Epoch: 03 | Train Loss: 0.393 | Train Acc: 82.13% | Valid Loss: 0.281 | Valid Acc: 87.86%
+Final Test Acc: 87.52%
+
+--- Training LSTM with WORD on cuda ---
+Epoch: 01 | Train Loss: 0.542 | Train Acc: 71.58% | Valid Loss: 0.408 | Valid Acc: 80.83%
+Epoch: 02 | Train Loss: 0.437 | Train Acc: 79.44% | Valid Loss: 0.326 | Valid Acc: 85.65%
+Epoch: 03 | Train Loss: 0.389 | Train Acc: 82.02% | Valid Loss: 0.279 | Valid Acc: 87.60%
+Final Test Acc: 87.61%
+Repo card metadata block was not found. Setting CardData to empty.
+
+--- Training RNN with WORDPIECE on cuda ---
+Epoch: 01 | Train Loss: 0.617 | Train Acc: 66.02% | Valid Loss: 0.498 | Valid Acc: 75.75%
+Epoch: 02 | Train Loss: 0.520 | Train Acc: 74.49% | Valid Loss: 0.434 | Valid Acc: 80.74%
+Epoch: 03 | Train Loss: 0.459 | Train Acc: 78.58% | Valid Loss: 0.353 | Valid Acc: 84.74%
+Final Test Acc: 84.44%
+
+--- Training GRU with WORDPIECE on cuda ---
+Epoch: 01 | Train Loss: 0.552 | Train Acc: 71.03% | Valid Loss: 0.411 | Valid Acc: 80.54%
+Epoch: 02 | Train Loss: 0.451 | Train Acc: 78.23% | Valid Loss: 0.338 | Valid Acc: 85.36%
+Epoch: 03 | Train Loss: 0.399 | Train Acc: 81.69% | Valid Loss: 0.283 | Valid Acc: 88.36%
+Final Test Acc: 88.11%
+
+--- Training LSTM with WORDPIECE on cuda ---
+Epoch: 01 | Train Loss: 0.541 | Train Acc: 71.58% | Valid Loss: 0.397 | Valid Acc: 81.96%
+Epoch: 02 | Train Loss: 0.441 | Train Acc: 79.00% | Valid Loss: 0.329 | Valid Acc: 85.42%
+Epoch: 03 | Train Loss: 0.393 | Train Acc: 82.12% | Valid Loss: 0.275 | Valid Acc: 88.07%
+Final Test Acc: 87.99%
+Repo card metadata block was not found. Setting CardData to empty.
+
+--- Training RNN with UNIGRAM on cuda ---
+Epoch: 01 | Train Loss: 0.627 | Train Acc: 64.03% | Valid Loss: 0.499 | Valid Acc: 75.61%
+Epoch: 02 | Train Loss: 0.534 | Train Acc: 73.15% | Valid Loss: 0.437 | Valid Acc: 80.52%
+Epoch: 03 | Train Loss: 0.475 | Train Acc: 77.41% | Valid Loss: 0.400 | Valid Acc: 82.30%
+Final Test Acc: 81.95%
+
+--- Training GRU with UNIGRAM on cuda ---
+Epoch: 01 | Train Loss: 0.566 | Train Acc: 69.74% | Valid Loss: 0.421 | Valid Acc: 80.59%
+Epoch: 02 | Train Loss: 0.461 | Train Acc: 77.98% | Valid Loss: 0.363 | Valid Acc: 83.98%
+Epoch: 03 | Train Loss: 0.412 | Train Acc: 81.26% | Valid Loss: 0.311 | Valid Acc: 86.83%
+Final Test Acc: 86.50%
+
+--- Training LSTM with UNIGRAM on cuda ---
+Epoch: 01 | Train Loss: 0.550 | Train Acc: 70.79% | Valid Loss: 0.420 | Valid Acc: 80.53%
+Epoch: 02 | Train Loss: 0.446 | Train Acc: 78.88% | Valid Loss: 0.345 | Valid Acc: 84.84%
+Epoch: 03 | Train Loss: 0.405 | Train Acc: 81.48% | Valid Loss: 0.303 | Valid Acc: 86.71%
+Final Test Acc: 86.36%
+
+================================================================================
+Tokenizer    | RNN (Val/Test)       | GRU (Val/Test)       | LSTM (Val/Test)     
+--------------------------------------------------------------------------------
+BPE          | 84.52% / 84.27% | 87.95% / 88.12% | 88.12% / 87.90%
+WORD         | 84.92% / 84.57% | 87.86% / 87.52% | 87.60% / 87.61%
+WORDPIECE    | 84.74% / 84.44% | 88.36% / 88.11% | 88.07% / 87.99%
+UNIGRAM      | 82.30% / 81.95% | 86.83% / 86.50% | 86.71% / 86.36%
+================================================================================
