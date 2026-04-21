@@ -1,3 +1,6 @@
+# Author: Matt Kuehr
+# Email: mck0063@auburn.edu
+
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -10,6 +13,19 @@ from scripts.models import SentimentRNN
 
 
 def train(model, iterator, optimizer, criterion, device):
+    """
+    Trains the model for one epoch.
+
+    Args:
+        model (nn.Module): The model to be trained.
+        iterator (DataLoader): The DataLoader providing the training data.
+        optimizer (torch.optim.Optimizer): The optimizer to use for updates.
+        criterion (nn.Module): The loss function.
+        device (torch.device): The device (CPU or GPU) to run the training on.
+
+    Returns:
+        tuple: A tuple containing (average_epoch_loss, average_epoch_accuracy).
+    """
     epoch_loss = 0
     epoch_acc = 0
     model.train()
@@ -37,6 +53,18 @@ def train(model, iterator, optimizer, criterion, device):
 
 
 def evaluate(model, iterator, criterion, device):
+    """
+    Evaluates the model on a given dataset.
+
+    Args:
+        model (nn.Module): The model to be evaluated.
+        iterator (DataLoader): The DataLoader providing the evaluation data.
+        criterion (nn.Module): The loss function.
+        device (torch.device): The device (CPU or GPU) to run the evaluation on.
+
+    Returns:
+        tuple: A tuple containing (average_epoch_loss, average_epoch_accuracy).
+    """
     epoch_loss = 0
     epoch_acc = 0
     model.eval()
@@ -61,6 +89,22 @@ def evaluate(model, iterator, criterion, device):
 
 
 def run_experiment(model_type, tokenizer_type, train_loader, val_loader, test_loader, vocab_size, device):
+    """
+    Runs a training and evaluation experiment for a specific model and tokenizer combination.
+
+    Args:
+        model_type (str): The type of model to use ('rnn', 'gru', or 'lstm').
+        tokenizer_type (str): The type of tokenizer being used.
+        train_loader (DataLoader): The DataLoader for training data.
+        val_loader (DataLoader): The DataLoader for validation data.
+        test_loader (DataLoader): The DataLoader for test data.
+        vocab_size (int): The size of the vocabulary.
+        device (torch.device): The device to run the experiment on.
+
+    Returns:
+        tuple: A tuple containing the best metrics recorded during the experiment:
+               (train_loss, train_acc, valid_loss, valid_acc).
+    """
     print(f"\n--- Training {model_type.upper()} with {tokenizer_type.upper()} on {device} ---")
     
     EMBED_DIM = 64
@@ -97,6 +141,13 @@ def run_experiment(model_type, tokenizer_type, train_loader, val_loader, test_lo
 
 
 def print_summary_table(results):
+    """
+    Prints a formatted summary table of the experiment results.
+
+    Args:
+        results (dict): A nested dictionary containing experiment results. 
+                        Format: {tokenizer_type: {model_type: (metrics_tuple)}}.
+    """
     print("\n" + "="*122)
     print(f"{'Tokenizer':<12} | {'RNN (Train L/A | Val L/A)':<34} | {'GRU (Train L/A | Val L/A)':<34} | {'LSTM (Train L/A | Val L/A)':<34}")
     print("-" * 122)
